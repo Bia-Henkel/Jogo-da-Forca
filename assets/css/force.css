@@ -88,7 +88,7 @@ body{
     border-radius: 5px;
     border: 1px solid var(--second-color);
     color: var(--second-color);
-    font-width: 900;
+    font-weight: 900;
     background-color: transparent;
 }
 
@@ -119,11 +119,9 @@ body{
         width: 30px;
         height: 30px;
     }
-
     #secret-word{
         font-size: 1.3em;
     }
-
     .letters{
         width: 18px;
     }
@@ -151,18 +149,17 @@ body{
 
 @media (min-width:769px){
     .keys button {
-        width: 68px;
-        height: 68px;
+        width: 50px;
+        height: 50px;
         font-size: 2em;
     }
     #secret-word{
         font-size: 2.5em;
     }
     .letters{
-        width: 35px;
+        width: 30px;
     }
     #tip{
         font-size: 2em;
     }
-
 }
