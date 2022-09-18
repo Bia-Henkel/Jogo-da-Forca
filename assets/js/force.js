@@ -807,11 +807,21 @@ function hiddenWord(){
     wordSecret.innerHTML = " ";//secretWordDrawn;
 
     for(i = 0; i < secretWordDrawn.length; i ++) {
-        if(dynamicList[i] === undefined){
-            dynamicList[i] = "&nbsp;"
-            wordSecret.innerHTML = wordSecret.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
+        if (dynamicList[i] === undefined) {
+            if (secretWordDrawn[i] === " ") {
+                dynamicList[i] = " ";
+                wordSecret.innerHTML = wordSecret.innerHTML + "<div class='spaceLetters'>" + dynamicList[i] + "</div>"
+            } else {
+                dynamicList[i] = "&nbsp;"
+                wordSecret.innerHTML = wordSecret.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
+            }
         } else {
-            wordSecret.innerHTML = wordSecret.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
+            if (secretWordDrawn[i] === " ") {
+                dynamicList[i] = " ";
+                wordSecret.innerHTML = wordSecret.innerHTML + "<div class='spaceLetters'>" + dynamicList[i] + "</div>"
+            } else {
+                wordSecret.innerHTML = wordSecret.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
+            }
         }
     }
 }
@@ -835,8 +845,8 @@ function compareList(letter){
         attempt--
         loadImageForce();
 
-        if(attempt == 0){
-            openModal();
+        if(attempt === 0){
+            openModal("DERROTA!", "Não foi dessa vez  <br> A palavra secreta era " + secretWordDrawn);
         }
 
     } else {
@@ -855,8 +865,8 @@ function compareList(letter){
     }
 
     if(win === true){
-        //mensagem na tela
-        attempt = 0;
+        openModal("PARABÉNS!" , "Será que você consegue acertar novamente?")
+            attempt = 0;
     }
 }
 
@@ -886,9 +896,21 @@ function loadImageForce(){
     }
 }
 
-function openModal(){
-    new bootstrap.Modal('#myModal');
+function openModal(title, message){
+    let modalTitle = document.getElementById("exampleModalLabel");
+    modalTitle.innerText = title;
+
+    let modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = message
+
+    let modal = new bootstrap.Modal(document.getElementById('myModal'))
+    modal.show();
 }
+
+let btnRestart = document.querySelector("#btnRestart");
+btnRestart.addEventListener("click", function(){
+    location.reload();
+});
 
 createSecretWord()
 hiddenWord()
