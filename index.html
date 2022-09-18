@@ -11,65 +11,53 @@
 <body>
     <div class="container">
         <div id="image"></div>
-        <div id="secret-word">
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-            <div class="letters">A</div>
-        </div>
+        <div id="secret-word"></div>
 
         <div id="keyboard">
             <div class="keys">
-                <button id="key-A">A</button>
-                <button id="key-B">B</button>
-                <button id="key-C">C</button>
-                <button id="key-D">D</button>
-                <button id="key-E">E</button>
-                <button id="key-F">F</button>
-                <button id="key-G">G</button>
-                <button id="key-H">H</button>
-                <button id="key-I">I</button>
+                <button id="key-A" onclick="chosenLetterVerification('A')">A</button>
+                <button id="key-B" onclick="chosenLetterVerification('B')">B</button>
+                <button id="key-C" onclick="chosenLetterVerification('C')">C</button>
+                <button id="key-D" onclick="chosenLetterVerification('D')">D</button>
+                <button id="key-E" onclick="chosenLetterVerification('E')">E</button>
+                <button id="key-F" onclick="chosenLetterVerification('F')">F</button>
+                <button id="key-G" onclick="chosenLetterVerification('G')">G</button>
+                <button id="key-H" onclick="chosenLetterVerification('H')">H</button>
+                <button id="key-I" onclick="chosenLetterVerification('I')">I</button>
             </div>
             <div class="keys">
-                <button id="key-J">J</button>
-                <button id="key-K">K</button>
-                <button id="key-L">L</button>
-                <button id="key-M">M</button>
-                <button id="key-N">N</button>
-                <button id="key-O">O</button>
-                <button id="key-P">P</button>
-                <button id="key-Q">Q</button>
-                <button id="key-R">R</button>
+                <button id="key-J" onclick="chosenLetterVerification('J')">J</button>
+                <button id="key-K" onclick="chosenLetterVerification('K')">K</button>
+                <button id="key-L" onclick="chosenLetterVerification('L')">L</button>
+                <button id="key-M" onclick="chosenLetterVerification('M')">M</button>
+                <button id="key-N" onclick="chosenLetterVerification('N')">N</button>
+                <button id="key-O" onclick="chosenLetterVerification('O')">O</button>
+                <button id="key-P" onclick="chosenLetterVerification('P')">P</button>
+                <button id="key-Q" onclick="chosenLetterVerification('Q')">Q</button>
+                <button id="key-R" onclick="chosenLetterVerification('R')">R</button>
             </div>
             <div class="keys">
-                <button id="key-S">S</button>
-                <button id="key-T">T</button>
-                <button id="key-U">U</button>
-                <button id="key-V">V</button>
-                <button id="key-W">W</button>
-                <button id="key-X">X</button>
-                <button id="key-Y">Y</button>
-                <button id="key-Z">Z</button>
+                <button id="key-S" onclick="chosenLetterVerification('S')">S</button>
+                <button id="key-T" onclick="chosenLetterVerification('T')">T</button>
+                <button id="key-U" onclick="chosenLetterVerification('U')">U</button>
+                <button id="key-V" onclick="chosenLetterVerification('V')">V</button>
+                <button id="key-W" onclick="chosenLetterVerification('W')">W</button>
+                <button id="key-X" onclick="chosenLetterVerification('X')">X</button>
+                <button id="key-Y" onclick="chosenLetterVerification('Y')">Y</button>
+                <button id="key-Z" onclick="chosenLetterVerification('Z')">Z</button>
                 <button id="btnRestart">
                     <i class="fa-solid fa-repeat"></i>
                 </button>
             </div>
         </div>
 
-        <div id="tip">
-        DICA
-        </div>
+        <div id="tip"></div>
 
         <!-- inicio modal -->
 
 
         <!-- final modal -->
     </div>
+    <script src="assets/js/force.js"></script>
 </body>
 </html>
