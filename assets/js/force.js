@@ -807,7 +807,7 @@ function hiddenWord(){
     wordSecret.innerHTML = " ";//secretWordDrawn;
 
     for(i = 0; i < secretWordDrawn.length; i ++) {
-        if(dynamicList[i] == undefined){
+        if(dynamicList[i] === undefined){
             dynamicList[i] = "&nbsp;"
             wordSecret.innerHTML = wordSecret.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
         } else {
@@ -815,28 +815,80 @@ function hiddenWord(){
         }
     }
 }
+
+
 function chosenLetterVerification(letter){
     if(attempt > 0 ) {
         changeStyleLetter("key-" + letter);
         compareList(letter);
+        hiddenWord()
     }
 }
 function changeStyleLetter(key){
     document.getElementById(key).style.background = "#CDB38B";
+    document.getElementById(key).style.pointerEvents = "none";
     document.getElementById(key).style.color = "#fff";
 }
-
 function compareList(letter){
     const position = secretWordDrawn.indexOf(letter)
     if(position < 0){
         attempt--
+        loadImageForce();
+
+        if(attempt == 0){
+            openModal();
+        }
+
     } else {
-        for(i = 0; i < secretWordDrawn; i++){
-            if(secretWordDrawn[i] == letter){
+        for(i = 0; i < secretWordDrawn.length; i++){
+            if(secretWordDrawn[i] === letter){
                 dynamicList[i] = letter;
             }
         }
     }
+
+    let win = true;
+    for(i = 0; i < secretWordDrawn.length; i++){
+        if(secretWordDrawn[i] !== dynamicList[i]){
+            win = false;
+        }
+    }
+
+    if(win === true){
+        //mensagem na tela
+        attempt = 0;
+    }
 }
+
+function loadImageForce(){
+    switch (attempt) {
+        case 5:
+            document.getElementById("image").style.background = "url('./assets/img/forca01.png')";
+            break;
+        case 4:
+            document.getElementById("image").style.background = "url('./assets/img/forca02.png')";
+            break;
+        case 3:
+            document.getElementById("image").style.background = "url('./assets/img/forca03.png')";
+            break;
+        case 2:
+            document.getElementById("image").style.background = "url('./assets/img/forca04.png')";
+            break;
+        case 1:
+            document.getElementById("image").style.background = "url('./assets/img/forca05.png')";
+            break;
+        case 0:
+            document.getElementById("image").style.background = "url('./assets/img/forca06.png')";
+            break;
+        default:
+            document.getElementById("image").style.background = "url('./assets/img/forca.png')";
+            break
+    }
+}
+
+function openModal(){
+    new bootstrap.Modal('#myModal');
+}
+
 createSecretWord()
 hiddenWord()

@@ -14,26 +14,26 @@
 
 /* PERSONALIZANDO A SCROLLBAR */
 
-body::-webkit-scrollbar {
+.myBody::-webkit-scrollbar {
     width: 10px;
 }
 
-body::-webkit-scrollbar-track {
+.myBody::-webkit-scrollbar-track {
     background: var(--second-color);
     border-radius: 20px;
 }
 
-body::-webkit-scrollbar-thumb {
+.myBody::-webkit-scrollbar-thumb {
     background-color: var(--first-color);
     border-radius: 20px;
     border: 2px solid var(--second-color);
 }
 
-body::-webkit-scrollbar-corner {
+.myBody::-webkit-scrollbar-corner {
     background-color: var(--first-color);
 }
 
-body{
+.myBody{
     width: 100vw;
     height: 90vh;
     margin-top: 10px;
@@ -91,6 +91,7 @@ body{
     font-weight: 900;
     background-color: transparent;
 }
+
 
 .keys button:hover{
     transform: scale(1.3);
