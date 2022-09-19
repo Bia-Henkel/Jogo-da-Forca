@@ -2,790 +2,791 @@ let attempt = 6;
 let dynamicList = [];
 let secretWordTip;
 let secretWordDrawn;
+
 const words = [
     word000 = {
         name:'ZIMBABUE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word001 = {
         name:'AFEGANISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word002 = {
         name:'AFRICA DO SUL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word003 = {
         name:'ALBANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word004 = {
         name:'ALEMANHA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word005 = {
         name:'ANDORRA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word006 = {
         name:'ANGOLA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word007 = {
         name:'ARABIA SAUDITA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word008 = {
         name:'ARGELIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word009 = {
         name:'ARGENTINA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word010 = {
         name:'ARMENIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word011 = {
         name:'AUSTRALIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word012 = {
         name:'AUSTRIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word013 = {
         name:'AZERBAIJAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word014 = {
         name:'BAHAMAS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word015 = {
         name:'BANGLADEXE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word016 = {
         name:'BARBADOS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word017 = {
         name:'BAREM',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word018 = {
         name:'BELGICA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word019 = {
         name:'BELIZE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word020 = {
         name:'BENIM',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word021 = {
         name:'BIELORRUSSIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word022 = {
         name:'BOLIVIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word023 = {
         name:'BOSNIA E HERZEGOVINA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word024 = {
         name:'BOTSUANA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word025 = {
         name:'BRASIL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word026 = {
         name:'BRUNEI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word027 = {
         name:'BULGARIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word028 = {
         name:'BURQUINA FASO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word029 = {
         name:'BURUNDI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word030 = {
         name:'BUTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word031 = {
         name:'CABO VERDE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word032 = {
         name:'CAMAROES',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word033 = {
         name:'CAMBOJA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word034 = {
         name:'CANADA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word035 = {
         name:'CATAR',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word036 = {
         name:'CAZAQUISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word037 = {
         name:'CHADE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word038 = {
         name:'CHILE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word039 = {
         name:'CHINA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word040 = {
         name:'CHIPRE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word041 = {
         name:'COLOMBIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word042 = {
         name:'COMORES',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word043 = {
         name:'CONGO BRAZZAVILLE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word044 = {
         name:'COREIA DO NORTE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word045 = {
         name:'COREIA DO SUL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word046 = {
         name:'COSOVO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word047 = {
         name:'COSTA DO MARFIM',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word048 = {
         name:'COSTA RICA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word049 = {
         name:'CROACIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word050 = {
         name:'CUAITE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word051 = {
         name:'CUBA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word052 = {
         name:'DINAMARCA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word053 = {
         name:'DOMINICA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word054 = {
         name:'EGITO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word055 = {
         name:'EMIRADOS ARABES UNIDOS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word056 = {
         name:'EQUADOR',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word057 = {
         name:'ERITREIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word058 = {
         name:'ESLOVAQUIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word059 = {
         name:'ESLOVENIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word060 = {
         name:'ESPANHA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word061 = {
         name:'ESSUATINI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word062 = {
         name:'ESTADO DA PALESTINA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word063 = {
         name:'ESTADOS UNIDOS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word064 = {
         name:'ESTONIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word065 = {
         name:'ETIOPIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word066 = {
         name:'FIJI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word067 = {
         name:'FILIPINAS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word068 = {
         name:'FINLANDIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word069 = {
         name:'FRANCA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word070 = {
         name:'GABAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word071 = {
         name:'GAMBIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word072 = {
         name:'GANA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word073 = {
         name:'GEORGIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word074 = {
         name:'GRANADA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word075 = {
         name:'GRECIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word076 = {
         name:'GUATEMALA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word077 = {
         name:'GUIANA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word078 = {
         name:'GUINE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word079 = {
         name:'GUINE EQUATORIAL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word080 = {
         name:'GUINE BISSAU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word081 = {
         name:'HAITI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word082 = {
         name:'HONDURAS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word083 = {
         name:'HUNGRIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word084 = {
         name:'IEMEN',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word085 = {
         name:'ILHAS MARECHAL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word086 = {
         name:'INDIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word087 = {
         name:'INDONESIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word088 = {
         name:'IRAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word089 = {
         name:'IRAQUE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word090 = {
         name:'IRLANDA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word091 = {
         name:'ISLANDIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word092 = {
         name:'ISRAEL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word093 = {
         name:'ITALIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word094 = {
         name:'JAMAICA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word095 = {
         name:'JAPAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word096 = {
         name:'JIBUTI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word097 = {
         name:'JORDANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word098 = {
         name:'LAUS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word099 = {
         name:'LESOTO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word100 = {
         name:'LETONIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word101 = {
         name:'LIBANO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word102 = {
         name:'LIBERIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word103 = {
         name:'LIBIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word104 = {
         name:'LISTENSTAINE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word105 = {
         name:'LITUANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word106 = {
         name:'LUXEMBURGO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word107 = {
         name:'MACEDONIA DO NORTE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word108 = {
         name:'MADAGASCAR',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word109 = {
         name:'MALASIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word110 = {
         name:'MALAUI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word111 = {
         name:'MALDIVAS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word112 = {
         name:'MALI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word113 = {
         name:'MALTA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word114 = {
         name:'MARROCOS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word115 = {
         name:'MAURICIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word116 = {
         name:'MAURITANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word117 = {
         name:'MEXICO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word118 = {
         name:'MIANMAR',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word119 = {
         name:'MICRONESIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word120 = {
         name:'MOCAMBIQUE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word121 = {
         name:'MOLDAVIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word122 = {
         name:'MONACO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word123 = {
         name:'MONGOLIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word124 = {
         name:'MONTENEGRO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word125 = {
         name:'NAMIBIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word126 = {
         name:'NAURU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word127 = {
         name:'NEPAL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word128 = {
         name:'NICARAGUA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word129 = {
         name:'NIGER',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word130 = {
         name:'NIGERIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word131 = {
         name:'NORUEGA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word132 = {
         name:'NOVA ZELANDIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word133 = {
         name:'OMA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word134 = {
         name:'PAISES BAIXOS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word135 = {
         name:'PALAU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word136 = {
         name:'PANAMA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word137 = {
         name:'PAPUA NOVA GUINE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word138 = {
         name:'PAQUISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word140 = {
         name:'PARAGUAI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word141 = {
         name:'PERU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word142 = {
         name:'POLONIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word143 = {
         name:'PORTUGAL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word144 = {
         name:'QUENIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word145 = {
         name:'QUIRGUISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word146 = {
         name:'QUIRIBATI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word147 = {
         name:'REINO UNIDO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word148 = {
         name:'REPÚBLICA CENTRO-AFRICANA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word149 = {
         name:'REPÚBLICA CHECA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word150 = {
         name:'REPÚBLICA DEMOCRATICA DO CONGO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word151 = {
         name:'REPÚBLICA DOMINICANA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word152 = {
         name:'ROMENIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word153 = {
         name:'RUANDA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word154 = {
         name:'RÚSSIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word155 = {
         name:'SALOMAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word156 = {
         name:'SALVADOR',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word157 = {
         name:'SAMOA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word158 = {
         name:'SANTA LÚCIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word159 = {
         name:'SAO CRISTOVAO E NEVES',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word160 = {
         name:'SAO MARINHO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word161= {
         name:'SAO TOME E PRINCIPE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word162 = {
         name:'SAO VICENTE E GRANADINAS',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word163 = {
         name:'SEICHELES',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word164 = {
         name:'SENEGAL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word165 = {
         name:'SERRA LEOA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word166 = {
         name:'SERVIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word167 = {
         name:'SINGAPURA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word168 = {
         name:'SIRIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word169 = {
         name:'SOMALIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word170 = {
         name:'SRI LANCA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word171 = {
         name:'SUDAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word172 = {
         name:'SUDAO DO SUL',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word173 = {
         name:'SUECIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word174 = {
         name:'SUICA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word175 = {
         name:'SURINAME',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word176 = {
         name:'TAILANDIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word177 = {
         name:'TAIUA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word178 = {
         name:'TAJIQUISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word179 = {
         name:'TANZANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word180 = {
         name:'TIMOR-LESTE',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word181 = {
         name:'TOGO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word182 = {
         name:'TONGA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word183 = {
         name:'TRINDADE E TOBAGO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word184 = {
         name:'TUNISIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word185 = {
         name:'TURCOMENISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word186 = {
         name:'TURQUIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word187 = {
         name:'TUVALU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word188 = {
         name:'UCRANIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word189 = {
         name:'UGANDA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word190 = {
         name:'URUGUAI',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word191 = {
         name:'USBEQUISTAO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word192 = {
         name:'VANUATU',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word193 = {
         name:'VATICANO',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word194 = {
         name:'VENEZUELA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word195 = {
         name:'VIETNAME',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     },
     word196 = {
         name:'ZAMBIA',
-        tip: 'LUGARES'
+        tip: 'PAISES'
     }
 ]
 function createSecretWord(){
@@ -793,6 +794,7 @@ function createSecretWord(){
 
     secretWordDrawn = words[indexWord].name;
     secretWordTip = words[indexWord].tip;
+
 }
 function hiddenWord(){
     const tip = document.getElementById("tip");
@@ -832,19 +834,21 @@ function changeStyleLetter(key){
     document.getElementById(key).style.pointerEvents = "none";
     document.getElementById(key).style.color = "#fff";
 }
+
+
 function compareList(letter){
     const position = secretWordDrawn.indexOf(letter)
-    if(position < 0){
+    if (position < 0) {
         attempt--
         loadImageForce();
 
-        if(attempt === 0){
+        if (attempt === 0) {
             openModal("DERROTA!", "Não foi dessa vez  <br> A palavra secreta era " + secretWordDrawn);
         }
 
     } else {
-        for(i = 0; i < secretWordDrawn.length; i++){
-            if(secretWordDrawn[i] === letter){
+        for (i = 0; i < secretWordDrawn.length; i++) {
+            if (secretWordDrawn[i] === letter) {
                 dynamicList[i] = letter;
             }
         }
@@ -856,9 +860,8 @@ function compareList(letter){
             win = false;
         }
     }
-
     if(win === true){
-        openModal("PARABENS!" , "SerA que você consegue acertar novamente?")
+        openModal("PARABENS!" , "Será que você consegue acertar novamente?")
             attempt = 0;
     }
 }
@@ -897,10 +900,17 @@ function openModal(title, message){
     let modal = new bootstrap.Modal(document.getElementById('myModal'))
     modal.show();
 }
-let btnRestart = document.querySelector("#btnRestart");
+
+let btnRestart = document.getElementById("btnRestart");
 btnRestart.addEventListener("click", function(){
+    location.reload();
+});
+
+let restartModal = document.getElementById("restartModal");
+btnRestart.addEventListener("onclick", function(){
     location.reload();
 });
 
 createSecretWord()
 hiddenWord()
+
