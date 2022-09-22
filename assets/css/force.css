@@ -3,7 +3,7 @@
 /* VARIABLES */
 :root{
     --first-color: #eb78d3;
-    --second-color: #177289;
+    --second-color: #005fff;
 }
 
 *{
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-/* PERSONALIZANDO A SCROLLBAR */
+/* PERSONALIZANDO A SCROLLBAR*/
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -62,7 +62,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .letters{
@@ -180,5 +180,8 @@ body{
     }
     #tip{
         font-size: 2em;
+    }
+    body{
+        overflow: initial;
     }
 }
