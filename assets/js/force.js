@@ -598,19 +598,19 @@ const words = [
         tip: 'PAISES'
     },
     word148 = {
-        name:'REPÚBLICA CENTRO-AFRICANA',
+        name:'REPUBLICA CENTRO-AFRICANA',
         tip: 'PAISES'
     },
     word149 = {
-        name:'REPÚBLICA CHECA',
+        name:'REPUBLICA CHECA',
         tip: 'PAISES'
     },
     word150 = {
-        name:'REPÚBLICA DEMOCRATICA DO CONGO',
+        name:'REPUBLICA DEMOCRATICA DO CONGO',
         tip: 'PAISES'
     },
     word151 = {
-        name:'REPÚBLICA DOMINICANA',
+        name:'REPUBLICA DOMINICANA',
         tip: 'PAISES'
     },
     word152 = {
@@ -622,7 +622,7 @@ const words = [
         tip: 'PAISES'
     },
     word154 = {
-        name:'RÚSSIA',
+        name:'RUSSIA',
         tip: 'PAISES'
     },
     word155 = {
@@ -638,7 +638,7 @@ const words = [
         tip: 'PAISES'
     },
     word158 = {
-        name:'SANTA LÚCIA',
+        name:'SANTA LUCIA',
         tip: 'PAISES'
     },
     word159 = {
@@ -1603,7 +1603,4 @@ createSecretWord()
 hiddenWord()
 
 
-function teste() {
-    alert("funciona!")
-}
 
