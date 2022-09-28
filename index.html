@@ -10,41 +10,40 @@
     <link rel="stylesheet" href="assets/css/menu.css" media="screen">
     <title>Jogo da Forca</title>
 </head>
+
 <body>
-    <div class="container">
-        <main>
-            <div id="retangulo" class="d-flex"></div>
+    <main class="SM MD" data-observe-resizes>
+        <div id="rectangle">
+            <!-- Será incluido o retangulo da parte de trás-->
             <div class="img-force"></div>
-            <div class="buttons">
-                <a href="jogo.html" id="start" class="button">BORA!</a>
-                <button type="button" class="btn btn" id="info" data-bs-toggle="modal" data-bs-target="#infoModal">TUTORIAL</button>
-                <button type="button" class="btn btn" id="credit" data-bs-toggle="modal" data-bs-target="#creditModal">TUTORIAL</button>
-            </div>
-        </main>
-        <footer>
-            <div class="card-footer d-flex" id="footer">
-                <p>Desenvolvido com 🫶 por <a href="https://github.com/" target="_blank">Beatriz da Silva</a></p>
-            </div>
-        </footer>
-    </div>
-
-
-
+                <a href="jogo.html" id="start" class="align-self-center">BORA!</a>
+                <button type="button" id="info" data-bs-toggle="modal" data-bs-target="#infoModal">TUTORIAL</button>
+                <button type="button" id="credit" data-bs-toggle="modal" data-bs-target="#creditModal">CRÉDITOS</button>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido com 🫶 por <a href="https://github.com/" target="_blank">Beatriz da Silva</a></p>
+    </footer>
 
     <!--inicio modal info-->
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">COMO JOGAR</h5>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <p><b>Para jogar é muito fácil!</b></p>
+                    <br>
+                    <ul>
+                        <li>Primeiro você deve ler a dica no final da página.</li>
+                        <li>Após isso, você deve escolher uma letra no teclado que está na tela.</li>
+                        <li>Se a letra fizer parte da palavra, o tracejado dará lugar a letra.</li>
+                        <li>Se a letra não fizer parte da palavra, uma parte do corpo da vitíma aparecerá na tela.</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn" data-bs-dismiss="modal">Entendi 👍</button>
                 </div>
             </div>
         </div>
@@ -55,15 +54,24 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabelcreditos">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabelcreditos">SOBRE O JOGO</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <p>O jogo da velha foi criado com a intenção de treinar conceitos de CSS, HTML e JavaScript.
+                    O jogo foi inspirado nos vídeos do canal Agnaldo Guimarães
+                    no YouTube, com diversas modificações.
+                    <br>
+                    <br>
+                    ✉ biahenkeldev@gmail.com
+                    <br>
+                    📱 <a href="https://www.linkedin.com/in/beatriz-da-silva-0266b1243/" target="_blank">Meu perfil no linkedin</a>
+                    <br>
+                    🐈️ <a href="https://github.com/Bia-Henkel">Meu perfil no GitHub</a>
+                    </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn" data-bs-dismiss="modal">Chega de enrolação!</button>
                 </div>
             </div>
         </div>
