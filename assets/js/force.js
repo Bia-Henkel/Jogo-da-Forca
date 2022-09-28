@@ -1,3 +1,8 @@
+// import 'assets/js/words.js';
+// let jsWords = document.createElement('script');
+// jsWords.src = 'assets/js/words.js';
+// document.head.appendChild(jsWords);
+
 let attempt = 6;
 let dynamicList = [];
 let secretWordTip;
@@ -593,19 +598,19 @@ const words = [
         tip: 'PAISES'
     },
     word148 = {
-        name:'REPÚBLICA CENTRO-AFRICANA',
+        name:'REPUBLICA CENTRO-AFRICANA',
         tip: 'PAISES'
     },
     word149 = {
-        name:'REPÚBLICA CHECA',
+        name:'REPUBLICA CHECA',
         tip: 'PAISES'
     },
     word150 = {
-        name:'REPÚBLICA DEMOCRATICA DO CONGO',
+        name:'REPUBLICA DEMOCRATICA DO CONGO',
         tip: 'PAISES'
     },
     word151 = {
-        name:'REPÚBLICA DOMINICANA',
+        name:'REPUBLICA DOMINICANA',
         tip: 'PAISES'
     },
     word152 = {
@@ -617,7 +622,7 @@ const words = [
         tip: 'PAISES'
     },
     word154 = {
-        name:'RÚSSIA',
+        name:'RUSSIA',
         tip: 'PAISES'
     },
     word155 = {
@@ -633,7 +638,7 @@ const words = [
         tip: 'PAISES'
     },
     word158 = {
-        name:'SANTA LÚCIA',
+        name:'SANTA LUCIA',
         tip: 'PAISES'
     },
     word159 = {
@@ -787,15 +792,690 @@ const words = [
     word196 = {
         name:'ZAMBIA',
         tip: 'PAISES'
-    }
+    },
+    word197 = {
+        name:'URUTU',
+        tip: 'ANIMAL'
+    },
+    word198 = {
+        name:'VEADO',
+        tip: 'ANIMAL'
+    },
+    word199 = {
+        name:'VEADO MATEIRO',
+        tip: 'ANIMAL'
+    },
+    word200 = {
+        name:'VESPA',
+        tip: 'ANIMAL'
+    },
+    word201 = {
+        name:'XEXEU',
+        tip: 'ANIMAL'
+    },
+    word202 = {
+        name:'ZEBRA',
+        tip: 'ANIMAL'
+    },
+    word203 = {
+        name:'ZORRILHO',
+        tip: 'ANIMAL'
+    },
+    word204 = {
+        name:'CISNE',
+        tip: 'ANIMAL'
+    },
+    word205 = {
+        name:'CIVETA',
+        tip: 'ANIMAL'
+    },
+    word206 = {
+        name:'COALA',
+        tip: 'ANIMAL'
+    },
+    word207 = {
+        name:'COBAIA',
+        tip: 'ANIMAL'
+    },
+    word208 = {
+        name:'COBRA-CEGA',
+        tip: 'ANIMAL'
+    },
+    word209 = {
+        name:'COELHO',
+        tip: 'ANIMAL'
+    },
+    word210 = {
+        name:'CONDOR',
+        tip: 'ANIMAL'
+    },
+    word211 = {
+        name:'CORVINA',
+        tip: 'ANIMAL'
+    },
+    word212 = {
+        name:'CORVO',
+        tip: 'ANIMAL'
+    },
+    word213 = {
+        name:'CROCODILO',
+        tip: 'ANIMAL'
+    },
+    word214 = {
+        name:'CURIMBATA',
+        tip: 'ANIMAL'
+    },
+    word215 = {
+        name:'DOURADO',
+        tip: 'ANIMAL'
+    },
+    word216 = {
+        name:'DRAGAO DE COMODO',
+        tip: 'ANIMAL'
+    },
+    word217 = {
+        name:'ELEFANTE',
+        tip: 'ANIMAL'
+    },
+    word218 = {
+        name:'EMA',
+        tip: 'ANIMAL'
+    },
+    word219 = {
+        name:'ESQUILO',
+        tip: 'ANIMAL'
+    },
+    word220 = {
+        name:'FOCA',
+        tip: 'ANIMAL'
+    },
+    word221 = {
+        name:'GAFANHOTO',
+        tip: 'ANIMAL'
+    },
+    word222 = {
+        name:'GALINHA DA ANGOLA',
+        tip: 'ANIMAL'
+    },
+    word223 = {
+        name:'GALINHA',
+        tip: 'ANIMAL'
+    },
+    word224 = {
+        name:'GAMBA',
+        tip: 'ANIMAL'
+    },
+    word225 = {
+        name:'GANSO',
+        tip: 'ANIMAL'
+    },
+    word226 = {
+        name:'GAROUPA',
+        tip: 'ANIMAL'
+    },
+    word227 = {
+        name:'GATO',
+        tip: 'ANIMAL'
+    },
+    word228 = {
+        name:'GATO DO MATO',
+        tip: 'ANIMAL'
+    },
+    word229 = {
+        name:'GAVIAO',
+        tip: 'ANIMAL'
+    },
+    word230 = {
+        name:'',
+        tip: 'ANIMAL'
+    },
+    word231 = {
+        name:'GIRAFA',
+        tip: 'ANIMAL'
+    },
+    word232 = {
+        name:'GOLFINHO',
+        tip: 'ANIMAL'
+    },
+    word233 = {
+        name:'GORILA',
+        tip: 'ANIMAL'
+    },
+    word234 = {
+        name:'GRALHA',
+        tip: 'ANIMAL'
+    },
+    word235 = {
+        name:'GUARA',
+        tip: 'ANIMAL'
+    },
+    word236 = {
+        name:'HAMSTER',
+        tip: 'ANIMAL'
+    },
+    word237 = {
+        name:'HIPOPOTAMO',
+        tip: 'ANIMAL'
+    },
+    word238 = {
+        name:'HOMEM',
+        tip: 'ANIMAL'
+    },
+    word239 = {
+        name:'JABURU',
+        tip: 'ANIMAL'
+    },
+    word240 = {
+        name:'JABUTI',
+        tip: 'ANIMAL'
+    },
+    word241 = {
+        name:'JACARE',
+        tip: 'ANIMAL'
+    },
+    word242 = {
+        name:'JACUTINGA',
+        tip: 'ANIMAL'
+    },
+    word243 = {
+        name:'JAGUATIRICA',
+        tip: 'ANIMAL'
+    },
+    word244 = {
+        name:'JARARACA',
+        tip: 'ANIMAL'
+    },
+    word245 = {
+        name:'JOAO DE BARRO',
+        tip: 'ANIMAL'
+    },
+    word246 = {
+        name:'JOBOIA',
+        tip: 'ANIMAL'
+    },
+    word247 = {
+        name:'LAGARTIXA',
+        tip: 'ANIMAL'
+    },
+    word248 = {
+        name:'LAGARTO',
+        tip: 'ANIMAL'
+    },
+    word249 = {
+        name:'LAMBARI',
+        tip: 'ANIMAL'
+    },
+    word250 = {
+        name:'LEAO',
+        tip: 'ANIMAL'
+    },
+    word251 = {
+        name:'LEBRE',
+        tip: 'ANIMAL'
+    },
+    word252 = {
+        name:'LEOPARDO',
+        tip: 'ANIMAL'
+    },
+    word253 = {
+        name:'LHAMA',
+        tip: 'ANIMAL'
+    },
+    word254 = {
+        name:'LIBELLULA',
+        tip: 'ANIMAL'
+    },
+    word255 = {
+        name:'LINCE',
+        tip: 'ANIMAL'
+    },
+    word399 = {
+        name:'LOBO',
+        tip: 'ANIMAL'
+    },
+    word256 = {
+        name:'LOMBRIGA',
+        tip: 'ANIMAL'
+    },
+    word257 = {
+        name:'LONTRA',
+        tip: 'ANIMAL'
+    },
+    word258 = {
+        name:'LULA',
+        tip: 'ANIMAL'
+    },
+    word259 = {
+        name:'MARRECO',
+        tip: 'ANIMAL'
+    },
+    word260 = {
+        name:'MICO AMARELO',
+        tip: 'ANIMAL'
+    },
+    word261 = {
+        name:'MICO LEAO',
+        tip: 'ANIMAL'
+    },
+    word262 = {
+        name:'MICO PRETO',
+        tip: 'ANIMAL'
+    },
+    word263 = {
+        name:'MICO RUIVO',
+        tip: 'ANIMAL'
+    },
+    word264 = {
+        name:'MOSQUITO DA DENGUE',
+        tip: 'ANIMAL'
+    },
+    word265 = {
+        name:'NAMORADO',
+        tip: 'ANIMAL'
+    },
+    word266 = {
+        name:'ONÇA',
+        tip: 'ANIMAL'
+    },
+    word267 = {
+        name:'ORANGOTANGO',
+        tip: 'ANIMAL'
+    },
+    word268 = {
+        name:'OSTRA JAPONESA',
+        tip: 'ANIMAL'
+    },
+    word269 = {
+        name:'OSTRA',
+        tip: 'ANIMAL'
+    },
+    word270 = {
+        name:'PACA',
+        tip: 'ANIMAL'
+    },
+    word271 = {
+        name:'PACU',
+        tip: 'ANIMAL'
+    },
+    word272 = {
+        name:'PANDA GIGANTE',
+        tip: 'ANIMAL'
+    },
+    word273 = {
+        name:'PAPAGAIO',
+        tip: 'ANIMAL'
+    },
+    word274 = {
+        name:'PATO',
+        tip: 'ANIMAL'
+    },
+    word275 = {
+        name:'PAVAO',
+        tip: 'ANIMAL'
+    },
+    word276 = {
+        name:'PEIXE ESPADA',
+        tip: 'ANIMAL'
+    },
+    word277 = {
+        name:'PERU',
+        tip: 'ANIMAL'
+    },
+    word278 = {
+        name:'PICA PAU',
+        tip: 'ANIMAL'
+    },
+    word279 = {
+        name:'PINGÜIM',
+        tip: 'ANIMAL'
+    },
+    word279 = {
+        name:'PINTADO',
+        tip: 'ANIMAL'
+    },
+    word280 = {
+        name:'PIOLHO',
+        tip: 'ANIMAL'
+    },
+    word281 = {
+        name:'PIRANHA',
+        tip: 'ANIMAL'
+    },
+    word282 = {
+        name:'PIRAROCU',
+        tip: 'ANIMAL'
+    },
+    word283 = {
+        name:'POLVO',
+        tip: 'ANIMAL'
+    },
+    word284 = {
+        name:'POMBO',
+        tip: 'ANIMAL'
+    },
+    word285 = {
+        name:'PORCO',
+        tip: 'ANIMAL'
+    },
+    word286 = {
+        name:'PORCO DO MATO',
+        tip: 'ANIMAL'
+    },
+    word287 = {
+        name:'PROTOZOARIO',
+        tip: 'ANIMAL'
+    },
+    word288 = {
+        name:'PULGA',
+        tip: 'ANIMAL'
+    },
+    word289 = {
+        name:'PULGAO',
+        tip: 'ANIMAL'
+    },
+    word290 = {
+        name:'PUMA',
+        tip: 'ANIMAL'
+    },
+    word291 = {
+        name:'QUERO QUERO',
+        tip: 'ANIMAL'
+    },
+    word292 = {
+        name:'RA',
+        tip: 'ANIMAL'
+    },
+    word293 = {
+        name:'RAPOSA',
+        tip: 'ANIMAL'
+    },
+    word294 = {
+        name:'RATO',
+        tip: 'ANIMAL'
+    },
+    word295 = {
+        name:'RINOCERONTE',
+        tip: 'ANIMAL'
+    },
+    word296 = {
+        name:'ROBALO',
+        tip: 'ANIMAL'
+    },
+    word297 = {
+        name:'SABIA',
+        tip: 'ANIMAL'
+    },
+    word298 = {
+        name:'SAGÜI',
+        tip: 'ANIMAL'
+    },
+    word299 = {
+        name:'SALMAO',
+        tip: 'ANIMAL'
+    },
+    word300 = {
+        name:'SAPO CURURU',
+        tip: 'ANIMAL'
+    },
+    word301 = {
+        name:'SAPO',
+        tip: 'ANIMAL'
+    },
+    word302 = {
+        name:'SARACURA',
+        tip: 'ANIMAL'
+    },
+    word303 = {
+        name:'SARDINHA',
+        tip: 'ANIMAL'
+    },
+    word304 = {
+        name:'',
+        tip: 'ANIMAL'
+    },
+    word305 = {
+        name:'TAMANDUA',
+        tip: 'ANIMAL'
+    },
+    word306 = {
+        name:'TATU',
+        tip: 'ANIMAL'
+    },
+    word307 = {
+        name:'TICO TICO',
+        tip: 'ANIMAL'
+    },
+    word308 = {
+        name:'TIGRE',
+        tip: 'ANIMAL'
+    },
+    word309 = {
+        name:'TOURO',
+        tip: 'ANIMAL'
+    },
+    word310 = {
+        name:'VACA',
+        tip: 'ANIMAL'
+    },
+    word311 = {
+        name:'RAIRA',
+        tip: 'ANIMAL'
+    },
+    word312 = {
+        name:'TUCANO',
+        tip: 'ANIMAL'
+    },
+    word313 = {
+        name:'TUCUNARE',
+        tip: 'ANIMAL'
+    },
+    word314 = {
+        name:'UIRAPURU',
+        tip: 'ANIMAL'
+    },
+    word315 = {
+        name:'URSO',
+        tip: 'ANIMAL'
+    },
+    word316 = {
+        name:'URUBU',
+        tip: 'ANIMAL'
+    },
+    word317 = {
+        name:'URUBU',
+        tip: 'ANIMAL'
+    },
+    word318 = {
+        name:'ABELHA',
+        tip: 'ANIMAL'
+    },
+    word319 = {
+        name:'ACARO DA SARNA',
+        tip: 'ANIMAL'
+    },
+    word320 = {
+        name:'AGUIA CHILENA',
+        tip: 'ANIMAL'
+    },
+    word321 = {
+        name:'AGUIA CINZENTA',
+        tip: 'ANIMAL'
+    },
+    word322 = {
+        name:'AGUIA DOURADA',
+        tip: 'ANIMAL'
+    },
+    word323 = {
+        name:'ALBATROZ',
+        tip: 'ANIMAL'
+    },
+    word324 = {
+        name:'ALCE',
+        tip: 'ANIMAL'
+    },
+    word325 = {
+        name:'ANTA',
+        tip: 'ANIMAL'
+    },
+    word326 = {
+        name:'ANTRAX',
+        tip: 'ANIMAL'
+    },
+    word327 = {
+        name:'ARANHA CARANGUEJEIRA',
+        tip: 'ANIMAL'
+    },
+    word328 = {
+        name:'ARANHA MARROM',
+        tip: 'ANIMAL'
+    },
+    word329 = {
+        name:'ARAPONGA',
+        tip: 'ANIMAL'
+    },
+    word330 = {
+        name:'ARARA VERMELHA',
+        tip: 'ANIMAL'
+    },
+    word331 = {
+        name:'ARATU',
+        tip: 'ANIMAL'
+    },
+    word332 = {
+        name:'ASNO',
+        tip: 'ANIMAL'
+    },
+    word333 = {
+        name:'AVESTRUZ',
+        tip: 'ANIMAL'
+    },
+    word334 = {
+        name:'BACILO DO TIFO',
+        tip: 'ANIMAL'
+    },
+    word335 = {
+        name:'BALEIA AZUL',
+        tip: 'ANIMAL'
+    },
+    word336 = {
+        name:'BARATA',
+        tip: 'ANIMAL'
+    },
+    word337 = {
+        name:'BEIJA-FLOR',
+        tip: 'ANIMAL'
+    },
+    word338 = {
+        name:'BEM-TE-VI',
+        tip: 'ANIMAL'
+    },
+    word339 = {
+        name:'BICHO-DA-SEDA',
+        tip: 'ANIMAL'
+    },
+    word340 = {
+        name:'BICHO-PREGUIÇA',
+        tip: 'ANIMAL'
+    },
+    word341 = {
+        name:'BORBOLETA',
+        tip: 'ANIMAL'
+    },
+    word342 = {
+        name:'BUFALO',
+        tip: 'ANIMAL'
+    },
+    word343 = {
+        name:'BUGIO PRETO',
+        tip: 'ANIMAL'
+    },
+    word344 = {
+        name:'CABRA',
+        tip: 'ANIMAL'
+    },
+    word345 = {
+        name:'CAGADO',
+        tip: 'ANIMAL'
+    },
+    word346 = {
+        name:'CALANGO',
+        tip: 'ANIMAL'
+    },
+    word347 = {
+        name:'CAMALEAO',
+        tip: 'ANIMAL'
+    },
+    word348 = {
+        name:'CAMELO',
+        tip: 'ANIMAL'
+    },
+    word349 = {
+        name:'CACHORRO',
+        tip: 'ANIMAL'
+    },
+    word350 = {
+        name:'CAPIVARA',
+        tip: 'ANIMAL'
+    },
+    word351 = {
+        name:'CARANGUEJO',
+        tip: 'ANIMAL'
+    },
+    word352 = {
+        name:'CARDEAL',
+        tip: 'ANIMAL'
+    },
+    word353 = {
+        name:'CARNEIRO',
+        tip: 'ANIMAL'
+    },
+    word354 = {
+        name:'CARPA',
+        tip: 'ANIMAL'
+    },
+    word355 = {
+        name:'CARRAPATO',
+        tip: 'ANIMAL'
+    },
+    word356 = {
+        name:'CASCAVEL',
+        tip: 'ANIMAL'
+    },
+    word357 = {
+        name:'CASTOR',
+        tip: 'ANIMAL'
+    },
+    word358 = {
+        name:'CAVALO',
+        tip: 'ANIMAL'
+    },
+    word359 = {
+        name:'CHACAL',
+        tip: 'ANIMAL'
+    },
+    word360 = {
+        name:'CHIMPANZE',
+        tip: 'ANIMAL'
+    },
+    word361 = {
+        name:'CHUPIM',
+        tip: 'ANIMAL'
+    },
+    word362 = {
+        name:'CIGARRA',
+        tip: 'ANIMAL'
+    },
 ]
+
+// SORTEIA A PALAVRA SECRETA
 function createSecretWord(){
     const indexWord = parseInt(Math.random() * words.length)
 
     secretWordDrawn = words[indexWord].name;
     secretWordTip = words[indexWord].tip;
-
 }
+
+// INCLUI A PALAVRA SECRETA NA LISTA DINAMICA E FAZ A LIGAÇÃO DA DICA CO HTML
 function hiddenWord(){
     const tip = document.getElementById("tip");
     tip.innerHTML = secretWordTip;
@@ -803,6 +1483,7 @@ function hiddenWord(){
     const wordSecret = document.getElementById("secret-word");
     wordSecret.innerHTML = " ";
 
+    // MOSTRA VISIVELMENTE A PALAVRA ESCONDIDA
     for(i = 0; i < secretWordDrawn.length; i ++) {
         if (dynamicList[i] === undefined) {
             if (secretWordDrawn[i] === " ") {
@@ -822,6 +1503,10 @@ function hiddenWord(){
         }
     }
 }
+
+// VERIFICA SE AINDA TEM TENTATIVA
+// ENVIA A LETRA ESCOLHIDA PARA A COMPARAÇÃO DE LISTAS
+// TROCA A LETRA DE COR E DESATIVA O HOVER
 function chosenLetterVerification(letter){
     if(attempt > 0 ) {
         changeStyleLetter("key-" + letter);
@@ -829,13 +1514,15 @@ function chosenLetterVerification(letter){
         hiddenWord()
     }
 }
+
+// MUDA O ESTILO DA TECLA/LETRA E DESATIVA O HOVER
 function changeStyleLetter(key){
     document.getElementById(key).style.background = "#CDB38B";
     document.getElementById(key).style.pointerEvents = "none";
     document.getElementById(key).style.color = "#fff";
 }
 
-
+// COMPARA A PALAVRA ESCOLHIDA COM A PALAVRA ESCONDIDA PARA VER SE DEU VITÓRIA OU DERROTA
 function compareList(letter){
     const position = secretWordDrawn.indexOf(letter)
     if (position < 0) {
@@ -865,6 +1552,8 @@ function compareList(letter){
             attempt = 0;
     }
 }
+
+// MUDA A IMAGEM DA FORCA
 function loadImageForce(){
     switch (attempt) {
         case 5:
@@ -890,6 +1579,8 @@ function loadImageForce(){
             break
     }
 }
+
+// ABRE A MODAL
 function openModal(title, message){
     let modalTitle = document.getElementById("exampleModalLabel");
     modalTitle.innerText = title;
@@ -901,16 +1592,15 @@ function openModal(title, message){
     modal.show();
 }
 
+
+// FAZ O BOTÃO DE RESTART
 let btnRestart = document.getElementById("btnRestart");
 btnRestart.addEventListener("click", function(){
     location.reload();
 });
 
-let restartModal = document.getElementById("restartModal");
-btnRestart.addEventListener("onclick", function(){
-    location.reload();
-});
-
 createSecretWord()
 hiddenWord()
+
+
 
